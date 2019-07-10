@@ -42,8 +42,4 @@ print(f"Cantidad de precios: {len(prices)}")
 
 np_prices = np.array(prices)
 
-promedio_precios = np.mean(np_prices)
-print(f"Promedio de precios: {promedio_precios}")
-
-mediana_precios = np.median(np_prices)
-print(f"Mediana de precios: {mediana_precios}")
+np.savetxt('prices.out', np_prices, delimiter=',')
